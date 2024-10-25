@@ -52,7 +52,7 @@ project/
 ### 2. Data Preparation
 
 **Dataset:**  
-Download the "IoMT-Traffic-Traces-2024" dataset in CSV format from [here](https://www.unb.ca/cic/datasets/iomt-dataset-2024.html).
+Download the "CIC IoMT dataset 2024" dataset in CSV format from [here](https://www.unb.ca/cic/datasets/iomt-dataset-2024.html).
 
 **Directory Setup:**  
 Within the `data/` directory, create `train/` and `test/` folders to hold the CSV files for training and testing, respectively.
