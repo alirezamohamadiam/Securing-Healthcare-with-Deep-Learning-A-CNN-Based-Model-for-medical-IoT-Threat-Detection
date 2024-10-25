@@ -1,4 +1,4 @@
-![model_comparison_subplots_barchart_improved](https://github.com/user-attachments/assets/a5167746-dabd-42b5-9a55-882ccc0cf767)# Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks
+# Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks
 
 Welcome to the repository accompanying our paper, "Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks." This work was presented at the 2024 19th Iranian Conference on Intelligent Systems (ICIS) held from October 23-24, 2024, at Sirjan University of Technology in Sirjan, Kerman, Iran.
 
