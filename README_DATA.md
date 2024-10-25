@@ -1,4 +1,3 @@
-```markdown
 # Data Preparation Guide
 
 This document provides instructions on organizing the training and testing data files required for our CNN-based cyberattack detection model in IoMT environments.
@@ -92,7 +91,7 @@ The following files should be placed in `data/test`:
 - TCP_IP-DoS-SYN_test.pcap.csv
 - TCP_IP-DoS-TCP_test.pcap.csv
 - TCP_IP-DoS-UDP_test.pcap.csv
-```
+  
 ### Notes
 
 Please ensure that the CSV files follow the specified directory structure to prevent data loading errors.
