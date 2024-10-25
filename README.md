@@ -24,12 +24,6 @@ This repository includes the code and setup instructions for implementing our pr
 
 ![model_comparison_subplots_barchart_improved](https://github.com/user-attachments/assets/7dc2bd46-c2ea-49cb-b94f-7ee42b268d56)
 
-## Dataset
-
-Download the "CIC IoMT dataset 2024" dataset in CSV format from [here](https://www.unb.ca/cic/datasets/iomt-dataset-2024.html).
-
-After downloading, extract and place the CSV files in the appropriate directories (`data/train/` and `data/test/`).
-
 ### Project Structure
 
 ```markdown
@@ -46,9 +40,52 @@ project/
 └── README_DATA.md        # Data Preparation Guide
 ```
 
-For more information on organizing and preparing the `train` and `test` data files, please refer to the [Data Preparation Guide](README_DATA.md).
+## Getting Started
 
-### Citation
+### 1. Prerequisites
+
+- **Python 3.7+**
+- **Required Libraries:** Install dependencies by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### 2. Data Preparation
+
+**Dataset:**  
+Download the "CIC IoMT dataset 2024" dataset in CSV format from [here](https://www.unb.ca/cic/datasets/iomt-dataset-2024.html).
+
+After downloading, extract and place the CSV files in the appropriate directories (`data/train/` and `data/test/`).
+
+### 3. Training and Evaluation
+
+Navigate to the `src` directory:
+```bash
+cd src
+```
+
+To run the model, execute `main.py` and specify the classification configuration:
+```bash
+python main.py --class_config <num_classes>
+```
+
+Replace `<num_classes>` with:
+- **2** for binary classification,
+- **6** for categorical,
+- **19** for multiclass.
+
+**Example (binary classification):**
+```bash
+python main.py --class_config 2
+```
+
+### Code Overview
+
+- **data_loader.py**: Manages data loading, preprocessing, and splitting into training/testing sets.
+- **model.py**: Defines the CNN architecture, including layers optimized for network traffic data.
+- **main.py**: Executes training and evaluation processes based on specified configuration.
+
+## Citation
 
 If you find this work useful for your research, please cite:
 
