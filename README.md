@@ -4,7 +4,7 @@ Welcome to the repository accompanying our paper, "Advanced Cyberattack Detectio
 
 ## Achievements and Contributions
 
-The proposed model achieved a perfect accuracy of 0.99 across binary, categorical, and multiclass classification tasks, outperforming previous state-of-the-art methods. This code was developed for a paper accepted at the 2024 IEEE Conference on Intelligent Systems (ICIS).
+The proposed model achieved a perfect accuracy of 0.99 across binary, categorical, and multiclass classification tasks, outperforming previous state-of-the-art methods.
 
 ## Code Developer
 
