@@ -13,9 +13,7 @@ After downloading, extract and place the CSV files in the appropriate directorie
 Within the `data/` directory, create `train/` and `test/` folders to hold the CSV files for training and testing, respectively.
 
 ### Training Data (data/train)
-51 items
-
-The following files should be placed in `data/train`:
+The following files should be placed in `data/train` (51 items):
 - ARP_Spoofing_train.pcap.csv
 - Benign_train.pcap.csv
 - MQTT-DDoS-Connect_Flood_train.pcap.csv
@@ -69,9 +67,7 @@ The following files should be placed in `data/train`:
 - TCP_IP-DoS-UDP4_train.pcap.csv
 
 ### Testing Data (data/test)
-21 items
-
-The following files should be placed in `data/test`:
+The following files should be placed in `data/test`(21 items):
 - ARP_Spoofing_test.pcap.csv
 - Benign_test.pcap.csv
 - MQTT-DDoS-Connect_Flood_test.pcap.csv
