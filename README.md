@@ -39,7 +39,7 @@ project/
 └── README.md             # Project description (this file)
 └── README_DATA.md        # Data Preparation Guide
 ```
-![fcn8_page-0001 (2)](https://github.com/user-attachments/assets/a3fcd742-4e0b-469f-9e07-72b02447cff3)
+![fcn8_page-0001 (1)](https://github.com/user-attachments/assets/75bb48e8-56f2-4d5e-8850-b75924e1ed7a)
 Architecture of the CNN model for IoMT attack classification
 
 ## Getting Started
