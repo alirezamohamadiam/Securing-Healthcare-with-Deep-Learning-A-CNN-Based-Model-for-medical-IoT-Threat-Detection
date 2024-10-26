@@ -1,59 +1,80 @@
+import os
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-from tensorflow.keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
-import os  
 
-# Define attack categories
-ATTACK_CATEGORIES_19 = { # For 19 classes
-    'ARP_Spoofing': 'Spoofing',
-    'MQTT-DDoS-Connect_Flood': 'MQTT-DDoS-Connect_Flood',
-    'MQTT-DDoS-Publish_Flood': 'MQTT-DDoS-Publish_Flood',
-    'MQTT-DoS-Connect_Flood': 'MQTT-DoS-Connect_Flood',
-    'MQTT-DoS-Publish_Flood': 'MQTT-DoS-Publish_Flood',
-    'MQTT-Malformed_Data': 'MQTT-Malformed_Data',
-    'Recon-OS_Scan': 'Recon-OS_Scan',
-    'Recon-Ping_Sweep': 'Recon-Ping_Sweep',
-    'Recon-Port_Scan': 'Recon-Port_Scan',
-    'Recon-VulScan': 'Recon-VulScan',
-    'TCP_IP-DDoS-ICMP': 'DDoS-ICMP',
-    'TCP_IP-DDoS-SYN': 'DDoS-SYN',
-    'TCP_IP-DDoS-TCP': 'DDoS-TCP',
-    'TCP_IP-DDoS-UDP': 'DDoS-UDP',
-    'TCP_IP-DoS-ICMP': 'DoS-ICMP',
-    'TCP_IP-DoS-SYN': 'DoS-SYN',
-    'TCP_IP-DoS-TCP': 'DoS-TCP',
-    'TCP_IP-DoS-UDP': 'DoS-UDP',
-    'Benign': 'Benign'
-}
+# --- Attack Category Mapping ---
+attack_categories = {
+    2: {
+        'attack': ['ARP_Spoofing', 'MQTT-DDoS-Connect_Flood', 'MQTT-DDoS-Publish_Flood',
+                   'MQTT-DoS-Connect_Flood', 'MQTT-DoS-Publish_Flood', 'MQTT-Malformed_Data',
+                   'Recon-OS_Scan', 'Recon-Ping_Sweep', 'Recon-Port_Scan', 'Recon-VulScan',
+                   'TCP_IP-DDoS-ICMP', 'TCP_IP-DDoS-SYN', 'TCP_IP-DDoS-TCP', 'TCP_IP-DDoS-UDP',
+                   'TCP_IP-DoS-ICMP', 'TCP_IP-DoS-SYN', 'TCP_IP-DoS-TCP', 'TCP_IP-DoS-UDP'],
+        'Benign': ['Benign']
+    },
+    6: {  # CORRECTED MAPPING FOR 6 CLASSES 
+        'Spoofing': ['ARP_Spoofing'],
+        'MQTT': ['MQTT-DDoS-Connect_Flood', 'MQTT-DDoS-Publish_Flood',
+                  'MQTT-DoS-Connect_Flood', 'MQTT-DoS-Publish_Flood', 'MQTT-Malformed_Data'],
+        'Recon': ['Recon-OS_Scan', 'Recon-Ping_Sweep', 'Recon-Port_Scan', 'Recon-VulScan'],
+        'DDoS': ['TCP_IP-DDoS-ICMP', 'TCP_IP-DDoS-SYN', 'TCP_IP-DDoS-TCP', 'TCP_IP-DDoS-UDP'],
+        'DoS': ['TCP_IP-DoS-ICMP', 'TCP_IP-DoS-SYN', 'TCP_IP-DoS-TCP', 'TCP_IP-DoS-UDP'],
+        'Benign': ['Benign']
+    },
+    19: {
+        'ARP_Spoofing': ['ARP_Spoofing'],
+        'MQTT-DDoS-Connect_Flood': ['MQTT-DDoS-Connect_Flood'],
+        'MQTT-DDoS-Publish_Flood': ['MQTT-DDoS-Publish_Flood'],
+        'MQTT-DoS-Connect_Flood': ['MQTT-DoS-Connect_Flood'],
+        'MQTT-DoS-Publish_Flood': ['MQTT-DoS-Publish_Flood'],
+        'MQTT-Malformed_Data': ['MQTT-Malformed_Data'],
+        'Recon-OS_Scan': ['Recon-OS_Scan'],
+        'Recon-Ping_Sweep': ['Recon-Ping_Sweep'],
+        'Recon-Port_Scan': ['Recon-Port_Scan'],
+        'Recon-VulScan': ['Recon-VulScan'],
+        'DDoS-ICMP': ['TCP_IP-DDoS-ICMP'],
+        'DDoS-SYN': ['TCP_IP-DDoS-SYN'],
+        'DDoS-TCP': ['TCP_IP-DDoS-TCP'],
+        'DDoS-UDP': ['TCP_IP-DDoS-UDP'],
+        'DoS-ICMP': ['TCP_IP-DoS-ICMP'],
+        'DoS-SYN': ['TCP_IP-DoS-SYN'],
+        'DoS-TCP': ['TCP_IP-DoS-TCP'],
+        'DoS-UDP': ['TCP_IP-DoS-UDP'],
+        'Benign': ['Benign']
+    }
+}[19]  # Set to desired number of classes
 
-ATTACK_CATEGORIES_2 = {  # For 2 classes 
-    'Benign': 'Benign',
-    'attack': 'attack', 
-}
 
-def get_attack_category(file_name, class_config): 
-    """Get attack category from file name."""
-    if class_config == 2:
-        categories = ATTACK_CATEGORIES_2
-    else:
-        categories = ATTACK_CATEGORIES_19  
+def load_data(file_path):
+    """Loads a CSV file into a Pandas DataFrame."""
+    try:
+        df = pd.read_csv(file_path)
+        return df
+    except FileNotFoundError:
+        print(f"Error: File not found - {file_path}")
+        return None
 
-    for key in categories:
-        if key in file_name:
-            return categories[key]
+def get_attack_category(file_name):
+    """Determines the attack category from the file name."""
+    for category, attacks in attack_categories.items():
+        if any(attack in file_name for attack in attacks):
+            return category
+    return "Unknown"
 
-def load_and_preprocess_data(data_dir, class_config):
-    """Load, preprocess, and prepare data for training."""
-    train_files = [f"{data_dir}/train/{f}" for f in os.listdir(f"{data_dir}/train") if f.endswith('.csv')]
-    test_files = [f"{data_dir}/test/{f}" for f in os.listdir(f"{data_dir}/test") if f.endswith('.csv')]
+def load_and_preprocess_data(dataset_path, num_classes):
+    """Loads, preprocesses the dataset, and prepares it for training."""
+    train_file = os.path.join(dataset_path, 'train.csv')
+    test_file = os.path.join(dataset_path, 'test.csv')
 
-    train_df = pd.concat([pd.read_csv(f).assign(file=f) for f in train_files], ignore_index=True)
-    test_df = pd.concat([pd.read_csv(f).assign(file=f) for f in test_files], ignore_index=True)
+    train_df = load_data(train_file)
+    test_df = load_data(test_file)
 
-    # Use the class_config when calling get_attack_category
-    train_df['Attack_Type'] = train_df['file'].apply(lambda x: get_attack_category(x, class_config))
-    test_df['Attack_Type'] = test_df['file'].apply(lambda x: get_attack_category(x, class_config))
+    if train_df is None or test_df is None:
+        return None, None, None, None
+
+    train_df['Attack_Type'] = train_df['file'].apply(get_attack_category)
+    test_df['Attack_Type'] = test_df['file'].apply(get_attack_category)
 
     X_train = train_df.drop(['Attack_Type', 'file'], axis=1)
     y_train = train_df['Attack_Type']
@@ -61,23 +82,11 @@ def load_and_preprocess_data(data_dir, class_config):
     y_test = test_df['Attack_Type']
 
     label_encoder = LabelEncoder()
-    y_train_encoded = label_encoder.fit_transform(y_train)
-    y_test_encoded = label_encoder.transform(y_test)
-
-    y_train_categorical = to_categorical(y_train_encoded)
-    y_test_categorical = to_categorical(y_test_encoded)
-
-    X_train, X_val, y_train_categorical, y_val_categorical = train_test_split(
-        X_train, y_train_categorical, test_size=0.2, random_state=42
-    )
+    y_train = label_encoder.fit_transform(y_train)
+    y_test = label_encoder.transform(y_test)
 
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train)
-    X_val = scaler.transform(X_val)
     X_test = scaler.transform(X_test)
 
-    X_train = X_train.reshape(X_train.shape[0], X_train.shape[1], 1)
-    X_val = X_val.reshape(X_val.shape[0], X_val.shape[1], 1)
-    X_test = X_test.reshape(X_test.shape[0], X_test.shape[1], 1)
-
-    return X_train, X_val, X_test, y_train_categorical, y_val_categorical, y_test_categorical, label_encoder
+    return X_train, X_test, y_train, y_test
