@@ -2,9 +2,9 @@
 
 Welcome to the repository accompanying our paper, "Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks." This work was presented at the 2024 19th Iranian Conference on Intelligent Systems (ICIS) held from October 23-24, 2024, at Sirjan University of Technology in Sirjan, Kerman, Iran.
 
-## Abstract
+## Achievements and Contributions
 
-The integration of the Internet of Medical Things (IoMT) has brought unprecedented benefits to healthcare, enhancing patient care through seamless connectivity. However, this connectivity introduces critical security vulnerabilities that must be addressed to safeguard these systems. Our paper introduces a CNN-based approach to detect cyberattacks within IoMT environments, specifically designed to analyze the temporal characteristics of network traffic. Evaluated on the CICIoMT2024 dataset, which includes 18 unique attack types targeting IoMT devices, our model achieves 99% accuracy across binary, categorical, and multiclass classification tasks. This surpasses the performance of established models such as Logistic Regression, AdaBoost, DNNs, and Random Forests, underscoring CNNs' potential to enhance IoMT cybersecurity.
+The proposed model achieved a perfect accuracy of 0.99 across binary, categorical, and multiclass classification tasks, outperforming previous state-of-the-art methods. This code was developed for a paper accepted at the 2024 IEEE Conference on Intelligent Systems (ICIS).
 
 ## Code Developer
 
@@ -39,6 +39,8 @@ project/
 └── README.md             # Project description (this file)
 └── README_DATA.md        # Data Preparation Guide
 ```
+![fcn8_page-0001 (2)](https://github.com/user-attachments/assets/a3fcd742-4e0b-469f-9e07-72b02447cff3)
+Architecture of the CNN model for IoMT attack classification
 
 ## Getting Started
 
