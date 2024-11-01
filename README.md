@@ -90,7 +90,7 @@ python main.py --class_config 2
 ## Citation
 
 For more details, please refer to our preprint on arXiv:  
-[Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks](https://doi.org/10.48550/arXiv.2410.23306)
+[Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks](https://arxiv.org/abs/2410.23306)
 
 ```plaintext
 Mohammadi, A., Ghahramani, H., Asghari, S. A., & Aminian, M. (2024). Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks. arXiv preprint arXiv:2410.23306.
