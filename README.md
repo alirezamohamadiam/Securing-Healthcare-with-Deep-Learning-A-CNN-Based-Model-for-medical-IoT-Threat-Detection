@@ -92,15 +92,8 @@ python main.py --class_config 2
 If you find this work useful for your research, please cite:
 
 ```plaintext
-@conference{ICIS2024,
-  author = {Mohammadi, Alireza and Aminian, Mehdi and Ghahramani, Hosna and Asghari, Seyyed Amir},
-  title = {Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks},
-  booktitle = {2024 19th Iranian Conference on Intelligent Systems (ICIS)},
-  year = {2024},
-  organization = {Sirjan University of Technology},
-  address = {Sirjan, Kerman, Iran},
-  month = {October 23-24}
-}
+Mohammadi, A., Ghahramani, H., Asghari, S. A., & Aminian, M. (2024). Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks. arXiv preprint arXiv:2410.23306.
+
 ```
 
 ## License
