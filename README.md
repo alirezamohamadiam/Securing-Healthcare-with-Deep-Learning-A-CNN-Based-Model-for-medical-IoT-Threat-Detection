@@ -1,6 +1,6 @@
-# Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks
+# Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection
 
-Welcome to the repository accompanying our paper, "Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks." This work was presented at the 2024 19th Iranian Conference on Intelligent Systems (ICIS) held from October 23-24, 2024, at Sirjan University of Technology in Sirjan, Kerman, Iran.
+Welcome to the repository accompanying our paper, "Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection" This work was presented at the 2024 19th Iranian Conference on Intelligent Systems (ICIS) held from October 23-24, 2024, at Sirjan University of Technology in Sirjan, Kerman, Iran.
 
 ## Achievements and Contributions
 
