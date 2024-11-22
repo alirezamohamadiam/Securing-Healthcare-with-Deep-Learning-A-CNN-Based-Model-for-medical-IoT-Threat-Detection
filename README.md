@@ -90,7 +90,7 @@ python main.py --class_config 2
 ## Citation
 
 For more details, please refer to our preprint on arXiv:  
-[Advanced Cyberattack Detection in Internet of Medical Things (IoMT) Using Convolutional Neural Networks](https://arxiv.org/abs/2410.23306)
+[Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection](https://arxiv.org/abs/2410.23306)
 
 Citation :
 ```plaintext
