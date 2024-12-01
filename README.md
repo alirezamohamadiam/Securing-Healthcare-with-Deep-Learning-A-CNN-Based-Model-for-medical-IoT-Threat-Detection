@@ -1,6 +1,6 @@
 # Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection
 
-Welcome to the repository accompanying our paper, "Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection" This work was presented at the 2024 19th Iranian Conference on Intelligent Systems (ICIS) held from October 23-24, 2024, at Sirjan University of Technology in Sirjan, Kerman, Iran.
+Welcome to the repository accompanying our paper, "Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection" This work was presented at the 2024 19th Iranian Conference on Intelligent Systems (ICIS) held from October 23-24, 2024 **(IEEE indexed Conference)**, at Sirjan University of Technology in Sirjan, Kerman, Iran.
 
 ## Achievements and Contributions
 
@@ -86,6 +86,11 @@ python main.py --class_config 2
 - **data_loader.py**: Manages data loading, preprocessing, and splitting into training/testing sets.
 - **model.py**: Defines the CNN architecture, including layers optimized for network traffic data.
 - **main.py**: Executes training and evaluation processes based on specified configuration.
+
+# Access to Presentation 🎥
+
+Via this [link](https://youtu.be/hPV5H9kTbYM?si=fWtb_eaIiLQ3uGEy), you can access the presentations related to this paper.
+
 
 ## Citation
 
