@@ -29,8 +29,8 @@ This repository includes the code and setup instructions for implementing our pr
 ```markdown
 project/
 ├── data/
-│   ├── train/ # Place training CSV files here (details in README_DATA.md)
-│   └── test/  # Place testing CSV files here (details in README_DATA.md)
+│   ├── train/            # Place training CSV files here (details in README_DATA.md)
+│   └── test/             # Place testing CSV files here (details in README_DATA.md)
 ├── src/
 │   ├── data_loader.py    # Handles data loading and preprocessing
 │   ├── model.py          # Defines and trains the CNN model
