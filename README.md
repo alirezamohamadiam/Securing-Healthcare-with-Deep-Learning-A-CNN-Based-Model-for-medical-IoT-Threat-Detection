@@ -92,14 +92,14 @@ python main.py --class_config 2
 Via this [link](https://youtu.be/hPV5H9kTbYM?si=fWtb_eaIiLQ3uGEy), you can access the presentations related to this paper.
 
 
-## Citation
+## Citation  
 
-For more details, please refer to our preprint on arXiv:  
+For further details, please refer to our preprint on **arXiv**:  
 
-[arXiv](https://arxiv.org/abs/2410.23306)
+📄 [arXiv: 2410.23306](https://arxiv.org/abs/2410.23306)  
 
-The final published version is available in IEEE Xplore: https://doi.org/10.1109/ICIS64839.2024.10887510
-
+The final peer-reviewed version is available in **IEEE Xplore**:  
+🔗 [DOI: 10.1109/ICIS64839.2024.10887510](https://doi.org/10.1109/ICIS64839.2024.10887510)
 
 Citation :
 ```plaintext
