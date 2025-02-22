@@ -104,7 +104,6 @@ The final peer-reviewed version is available in **IEEE Xplore**:
 Citation :
 ```plaintext
 Mohammadi, A., Ghahramani, H., Asghari, S. A., & Aminian, M. (2024). Securing healthcare with deep learning: A CNN-based model for medical IoT threat detection. In 2024 19th Iranian Conference on Intelligent Systems (ICIS) (pp. 168-173). IEEE. https://doi.org/10.1109/ICIS64839.2024.10887510
-
 ```
 
 ## License
