@@ -55,8 +55,7 @@ Architecture of the CNN model for IoMT attack classification
 ### 2. Data Preparation
 
 **Dataset:**  
-Download the "CIC IoMT dataset 2024" dataset in CSV format from [here](https://www.unb.ca/cic/datasets/iomt-dataset-2024.html).
-
+Download the "CIC IoMT dataset 2024" dataset in CSV format from [here](https://www.unb.ca/cic/datasets/iomt-dataset-2024.html)(details in README_DATA.md).
 After downloading, extract and place the CSV files in the appropriate directories (`data/train/` and `data/test/`).
 
 ### 3. Training and Evaluation
