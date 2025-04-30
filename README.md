@@ -8,7 +8,7 @@ The proposed model achieved a perfect accuracy of 0.99 across binary, categorica
 
 ## Code Developer
 
-Alireza Mohammadi (Department of Computer Engineering, Islamic Azad University - Kermanshah Branch, Kermanshah, Iran) 
+Alireza Mohammadi 
 
 ## Project Overview
 
