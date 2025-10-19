@@ -1,5 +1,4 @@
-# 🏥 Securing Healthcare with Deep Learning
-### A CNN-Based Model for Medical IoT Threat Detection
+# 🏥Securing Healthcare with Deep Learning: A CNN-Based Model for medical IoT Threat Detection
 
 <div align="center">
 
@@ -187,6 +186,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
