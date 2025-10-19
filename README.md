@@ -127,28 +127,6 @@ Replace `<num_classes>` with:
 ```bash
 python main.py --class_config 2
 ```
----
-
-## 💻 Usage Examples
-
-### Binary Classification (Benign vs Attack)
-```bash
-cd src
-python main.py --class_config 2
-```
-
-### Categorical Classification (6 Attack Categories)
-```bash
-cd src
-python main.py --class_config 6
-```
-
-### Multiclass Classification (19 Attack Types)
-```bash
-cd src
-python main.py --class_config 19
-```
-
 | Configuration | Description |
 |:-------------:|:------------|
 | `--class_config 2` | Binary: Benign vs Attack |
@@ -215,6 +193,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
