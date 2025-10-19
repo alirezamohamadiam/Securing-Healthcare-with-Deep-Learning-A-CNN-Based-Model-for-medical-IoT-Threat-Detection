@@ -146,8 +146,8 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 ```
 
 **Links:**
-- 📄 **IEEE Xplore**: [DOI: 10.1109/ICIS64839.2024.10887510](https://doi.org/10.1109/ICIS64839.2024.10887510)
-- 📄 **arXiv**: [arXiv:2410.23306](https://arxiv.org/abs/2410.23306)
+- 📄 [IEEE Xplore](https://doi.org/10.1109/ICIS64839.2024.10887510)
+- 📄 [arXiv](https://arxiv.org/abs/2410.23306)
 
 ---
 
@@ -158,6 +158,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
