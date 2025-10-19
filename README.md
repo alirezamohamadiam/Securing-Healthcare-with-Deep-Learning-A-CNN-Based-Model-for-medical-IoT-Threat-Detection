@@ -54,12 +54,6 @@ This repository contains the implementation of our CNN-based intrusion detection
 
 ## 📊 Performance Metrics
 
-| Model Classification Task | Accuracy | Precision | Recall | F1-Score |
-|---------------------------|:--------:|:---------:|:------:|:--------:|
-| **Proposed Model (19 Class)** | 0.99 | 0.98 | 0.99 | 0.98 |
-| **Proposed Model (2 Class)**  | 0.99 | 0.99 | 0.99 | 0.99 |
-| **Proposed Model (6 Class)**  | 0.99 | 0.99 | 0.99 | 0.99 |
-
 <div align="center">
 
 ![Model Comparison](https://github.com/user-attachments/assets/7dc2bd46-c2ea-49cb-b94f-7ee42b268d56)
@@ -193,6 +187,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
