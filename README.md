@@ -9,7 +9,7 @@
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![Presentation](https://img.shields.io/badge/YouTube-Presentation-red.svg)](https://youtu.be/hPV5H9kTbYM?si=fWtb_eaIiLQ3uGEy)
 
-*Official Implementation - Presented at the 19th Iranian Conference on Intelligent Systems (ICIS 2024)* **IEEE Indexed Conference**
+*Official Implementation - Presented at the 19th Iranian Conference on Intelligent Systems (ICIS 2024)* **IEEE Indexed**
 
 [**Paper (IEEE)**](https://doi.org/10.1109/ICIS64839.2024.10887510) | [**arXiv**](https://arxiv.org/abs/2410.23306) | [**Presentation**](https://youtu.be/hPV5H9kTbYM?si=fWtb_eaIiLQ3uGEy) | [**Dataset**](https://www.unb.ca/cic/datasets/iomt-dataset-2024.html)
 
@@ -222,4 +222,5 @@ Released under the MIT License — see the
 [LICENSE](https://github.com/alirezamohamadiam/Securing-Healthcare-with-Deep-Learning-A-CNN-Based-Model-for-medical-IoT-Threat-Detection/blob/main/LICENSE) file for more information.
 
 </div>
+
 
