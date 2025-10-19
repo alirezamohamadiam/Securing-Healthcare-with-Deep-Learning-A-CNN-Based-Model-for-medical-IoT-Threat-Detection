@@ -10,8 +10,6 @@
 
 *Official Implementation - Presented at the 19th Iranian Conference on Intelligent Systems (ICIS 2024)* **IEEE Indexed**
 
-[**Paper**](https://doi.org/10.1109/ICIS64839.2024.10887510) | [**arXiv(PDF)**](https://arxiv.org/abs/2410.23306) | [**Dataset**](https://www.unb.ca/cic/datasets/iomt-dataset-2024.html)
-
 </div>
 
 ---
@@ -186,6 +184,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
