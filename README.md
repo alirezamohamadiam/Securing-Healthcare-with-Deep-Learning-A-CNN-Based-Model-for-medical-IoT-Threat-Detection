@@ -205,11 +205,6 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 - 📄 **IEEE Xplore**: [DOI: 10.1109/ICIS64839.2024.10887510](https://doi.org/10.1109/ICIS64839.2024.10887510)
 - 📄 **arXiv**: [arXiv:2410.23306](https://arxiv.org/abs/2410.23306)
 
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/alirezamohamadiam/Securing-Healthcare-with-Deep-Learning-A-CNN-Based-Model-for-medical-IoT-Threat-Detection/blob/main/LICENSE) file for details.
-
 ---
 
 <div align="center">
@@ -218,9 +213,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 Made with ❤️ by Alireza Mohamadi
 
-Released under the MIT License — see the  
-[LICENSE](https://github.com/alirezamohamadiam/Securing-Healthcare-with-Deep-Learning-A-CNN-Based-Model-for-medical-IoT-Threat-Detection/blob/main/LICENSE) file for more information.
-
 </div>
+
 
 
