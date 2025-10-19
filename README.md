@@ -17,7 +17,6 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
-- [Achievements](#-achievements)
 - [Performance Metrics](#-performance-metrics)
 - [Model Architecture](#-model-architecture)
 - [Installation](#-installation)
@@ -35,18 +34,6 @@ This repository contains the implementation of our CNN-based intrusion detection
 - Multi-classification support: Binary (2-class), Categorical (6-class), and Multiclass (19-class)
 - Perfect accuracy of 0.99 across all classification tasks
 - Outperforms previous state-of-the-art methods
-- Optimized for IoMT network security
-
----
-
-## 🏆 Achievements
-
-✅ **Perfect Performance**: The proposed model achieved an accuracy of **0.99** across binary, categorical, and multiclass classification tasks
-
-✅ **State-of-the-Art**: Outperforms previous state-of-the-art methods in IoMT threat detection
-
-✅ **Comprehensive Coverage**: Detects 19 different attack types plus benign traffic
-
 ---
 
 ## 📊 Performance Metrics
@@ -184,6 +171,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
