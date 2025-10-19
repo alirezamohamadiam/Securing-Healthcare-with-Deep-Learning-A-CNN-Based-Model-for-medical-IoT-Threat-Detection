@@ -28,8 +28,6 @@
 - [Usage](#-usage)
 - [Project Structure](#-project-structure)
 - [Citation](#-citation)
-- [License](#-license)
-
 ---
 
 ## 🔬 Overview
@@ -214,6 +212,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
