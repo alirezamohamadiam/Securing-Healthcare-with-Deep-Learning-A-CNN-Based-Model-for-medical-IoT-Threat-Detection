@@ -87,7 +87,6 @@ This repository contains the implementation of our CNN-based intrusion detection
 ### Step 1: Clone Repository
 ```bash
 git clone https://github.com/alirezamohamadiam/Securing-Healthcare-with-Deep-Learning-A-CNN-Based-Model-for-medical-IoT-Threat-Detection.git
-cd iomt-cnn-threat-detection
 ```
 
 ### Step 2: Install Requirements
@@ -110,6 +109,10 @@ data/
 > **Detailed instructions:** See [`README_DATA.md`](https://github.com/alirezamohamadiam/Securing-Healthcare-with-Deep-Learning-A-CNN-Based-Model-for-medical-IoT-Threat-Detection/blob/main/README_DATA.md)
 
 ### Step 5: Run Training
+Navigate to the `src` directory:
+```bash
+cd src
+```
 To run the model, execute `main.py` and specify the classification configuration:
 ```bash
 python main.py --class_config <num_classes>
@@ -212,6 +215,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
