@@ -180,14 +180,6 @@ project/
 
 ---
 
-## 🎥 Presentation
-
-Access the conference presentation via YouTube:
-
-[![Presentation Video](https://img.shields.io/badge/Watch-Presentation-red?style=for-the-badge&logo=youtube)](https://youtu.be/hPV5H9kTbYM?si=fWtb_eaIiLQ3uGEy)
-
----
-
 ## 📚 Citation
 
 If you use this code or find our work helpful, please cite our paper:
@@ -230,3 +222,4 @@ Released under the MIT License — see the
 [LICENSE](https://github.com/alirezamohamadiam/Securing-Healthcare-with-Deep-Learning-A-CNN-Based-Model-for-medical-IoT-Threat-Detection/blob/main/LICENSE) file for more information.
 
 </div>
+
