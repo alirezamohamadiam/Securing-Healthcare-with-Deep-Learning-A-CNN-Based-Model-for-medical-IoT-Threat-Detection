@@ -86,7 +86,7 @@ This repository contains the implementation of our CNN-based intrusion detection
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/iomt-cnn-threat-detection.git
+git clone https://github.com/alirezamohamadiam/Securing-Healthcare-with-Deep-Learning-A-CNN-Based-Model-for-medical-IoT-Threat-Detection.git
 cd iomt-cnn-threat-detection
 ```
 
@@ -212,6 +212,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
