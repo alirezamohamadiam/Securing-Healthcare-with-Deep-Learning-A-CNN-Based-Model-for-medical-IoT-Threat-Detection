@@ -105,12 +105,6 @@ Replace `<num_classes>` with:
 ```bash
 python main.py --class_config 2
 ```
-| Configuration | Description |
-|:-------------:|:------------|
-| `--class_config 2` | Binary: Benign vs Attack |
-| `--class_config 6` | Categorical: 6 attack categories |
-| `--class_config 19` | Multiclass: 19 specific attack types |
-
 ---
 
 ## 📂 Project Structure
@@ -128,13 +122,6 @@ project/
 ├── README.md             # Project documentation (this file)
 └── README_DATA.md        # Data preparation guide
 ```
-
-### Code Overview
-
-- **`data_loader.py`**: Manages data loading, preprocessing, and splitting into training/testing sets
-- **`model.py`**: Defines the CNN architecture, including layers optimized for network traffic data
-- **`main.py`**: Executes training and evaluation processes based on specified configuration
-
 ---
 
 ## 📚 Citation
@@ -171,6 +158,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
