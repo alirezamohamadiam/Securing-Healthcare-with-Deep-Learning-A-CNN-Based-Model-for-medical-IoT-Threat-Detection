@@ -10,7 +10,7 @@ After downloading, extract and place the CSV files in the appropriate directorie
 
 ### Directory Setup
 
-Within the `data/` directory, create `train/` and `test/` folders to hold the CSV files for training and testing, respectively.
+Within the `data/` directory, there should be `train/` and `test/` folders to hold the CSV files for training and testing, respectively.
 
 ### Training Data (data/train)
 The following files should be placed in `data/train` (51 items):
