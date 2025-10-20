@@ -144,8 +144,16 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 ```
 
 **Links:**
-- 📄 [IEEE Xplore](https://doi.org/10.1109/ICIS64839.2024.10887510)
-- 📄 [arXiv](https://arxiv.org/abs/2410.23306)
+The open-access PDF version of the paper is available on arXiv. You can read the full article there for free. Please note that the IEEE Xplore version is not open access.
+
+* 📄 **IEEE Xplore (official version, not open access):**
+  [https://doi.org/10.1109/ICIS64839.2024.10887510](https://doi.org/10.1109/ICIS64839.2024.10887510)
+
+* 📄 **arXiv (PDF and open-access version):**
+  [https://arxiv.org/abs/2410.23306](https://arxiv.org/abs/2410.23306)
+---
+
+If you want it merged into the original paragraph or rewritten in a single block, just tell me!
 
 ---
 
@@ -156,6 +164,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
