@@ -9,7 +9,6 @@
 [![Presentation](https://img.shields.io/badge/YouTube-Presentation-red.svg)](https://youtu.be/hPV5H9kTbYM?si=fWtb_eaIiLQ3uGEy)
 
 *Official Implementation - Presented at the 19th Iranian Conference on Intelligent Systems (ICIS 2024)* **IEEE Indexed**
-
 </div>
 
 ---
@@ -28,7 +27,7 @@
 
 ## 🔬 Overview
 
-This repository contains the implementation of our CNN-based intrusion detection model for Internet of Medical Things (IoMT) systems. The model performs multi-class classification on network traffic to distinguish between **19 attack types** and benign traffic, based on the **CICIoMT2024 dataset**.
+This repository contains the implementation of our CNN-based intrusion detection model for Internet of Medical Things (IoMT) systems. The model performs multi-class classification on network traffic to distinguish between **19 attack types** and benign traffic, based on the **CICIoMT2024 dataset**. This repository contains the code relative to the paper. Please cite [paper] when referring to this repository.
 
 **Key Features:**
 - Multi-classification support: Binary (2-class), Categorical (6-class), and Multiclass (19-class)
@@ -158,6 +157,7 @@ https://doi.org/10.1109/ICIS64839.2024.10887510
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
