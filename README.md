@@ -130,7 +130,7 @@ Mohammadi, A., Ghahramani, H., Asghari, S. A., & Aminian, M. (2024, October). Se
 ```
 
 **Links:**
-The open-access PDF version of the paper is available on arXiv. You can read the full article there for free. Please note that the IEEE Xplore version is not open access.
+The open-access PDF version of the paper is available on arXiv. You can read the full article there for free. 
 
 * 📄 **IEEE Xplore (official version, not open access):**
   [https://doi.org/10.1109/ICIS64839.2024.10887510](https://doi.org/10.1109/ICIS64839.2024.10887510)
@@ -146,6 +146,7 @@ The open-access PDF version of the paper is available on arXiv. You can read the
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
