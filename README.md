@@ -11,18 +11,7 @@
 *Official Implementation - Presented at the 19th Iranian Conference on Intelligent Systems (ICIS 2024)* **IEEE Indexed**
 </div>
 
----
 
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Performance Metrics](#-performance-metrics)
-- [Model Architecture](#-model-architecture)
-- [Installation](#-installation)
-- [Data Preparation](#-data-preparation)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Citation](#-citation)
 ---
 
 ## 🔬 Overview
@@ -157,6 +146,7 @@ The open-access PDF version of the paper is available on arXiv. You can read the
 Made with ❤️ by Alireza Mohamadi
 
 </div>
+
 
 
 
