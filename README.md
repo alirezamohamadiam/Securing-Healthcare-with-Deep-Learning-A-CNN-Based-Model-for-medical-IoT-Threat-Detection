@@ -15,7 +15,7 @@
 ---
 
 ## Overview
-This repository provides the implementation of our CNN-based intrusion detection model for Internet of Medical Things (IoMT) systems. The model performs multi-class classification on network traffic, distinguishing 19 attack types as well as benign traffic using the CICIoMT2024 dataset. All source code corresponds to the work presented in our paper. If you use or reference this repository, please **cite** [our paper](#-citation). This work has received **26+ citations** and **26+ GitHub stars**.
+This repository provides the implementation of our CNN-based intrusion detection model for Internet of Medical Things (IoMT) systems. The model performs multi-class classification on network traffic, distinguishing 19 attack types as well as benign traffic using the CICIoMT2024 dataset. All source code corresponds to the work presented in our paper. If you use or reference this repository, please **cite** [our paper](#-citation). This work has received **26+ citations** and **24+ GitHub stars**.
 
 **Key Features:**
 - Multi-classification support: Binary (2-class), Categorical (6-class), and Multiclass (19-class)
