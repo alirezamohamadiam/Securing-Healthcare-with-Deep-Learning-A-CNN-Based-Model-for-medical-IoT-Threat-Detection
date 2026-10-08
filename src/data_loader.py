@@ -78,23 +78,31 @@ def get_attack_category(file_name, class_config):
         categories = ATTACK_CATEGORIES_2
     elif class_config == 6:
         categories = ATTACK_CATEGORIES_6
-    else:  # Default to 19 classes 
-        categories = ATTACK_CATEGORIES_19  
+    elif class_config == 19:
+        categories = ATTACK_CATEGORIES_19
+    else:
+        raise ValueError(f"Unsupported class_config: {class_config}. Expected 2, 6, or 19.")
 
-    for key in categories:
+    for key in sorted(categories, key=len, reverse=True):
         if key in file_name:
             return categories[key]
+    raise ValueError(f"Could not determine attack category for CSV file: {file_name}")
         
 def load_and_preprocess_data(data_dir, class_config):
     """Load, preprocess, and prepare data for training."""
-    train_files = [f"{data_dir}/train/{f}" for f in os.listdir(f"{data_dir}/train") if f.endswith('.csv')]
-    test_files = [f"{data_dir}/test/{f}" for f in os.listdir(f"{data_dir}/test") if f.endswith('.csv')]
+    train_files = sorted(f"{data_dir}/train/{f}" for f in os.listdir(f"{data_dir}/train") if f.endswith('.csv'))
+    test_files = sorted(f"{data_dir}/test/{f}" for f in os.listdir(f"{data_dir}/test") if f.endswith('.csv'))
+
+    if not train_files:
+        raise FileNotFoundError(f"No CSV files found in {data_dir}/train")
+    if not test_files:
+        raise FileNotFoundError(f"No CSV files found in {data_dir}/test")
 
     train_df = pd.concat([pd.read_csv(f).assign(file=f) for f in train_files], ignore_index=True)
     test_df = pd.concat([pd.read_csv(f).assign(file=f) for f in test_files], ignore_index=True)
 
-    train_df['Attack_Type'] = train_df['file'].apply(lambda x: get_attack_category(x, class_config))
-    test_df['Attack_Type'] = test_df['file'].apply(lambda x: get_attack_category(x, class_config))
+    train_df['Attack_Type'] = train_df['file'].apply(lambda x: get_attack_category(os.path.basename(x), class_config))
+    test_df['Attack_Type'] = test_df['file'].apply(lambda x: get_attack_category(os.path.basename(x), class_config))
 
     X_train = train_df.drop(['Attack_Type', 'file'], axis=1)
     y_train = train_df['Attack_Type']
@@ -105,11 +113,16 @@ def load_and_preprocess_data(data_dir, class_config):
     y_train_encoded = label_encoder.fit_transform(y_train)
     y_test_encoded = label_encoder.transform(y_test)
 
-    y_train_categorical = to_categorical(y_train_encoded)
-    y_test_categorical = to_categorical(y_test_encoded)
+    num_classes = len(label_encoder.classes_)
+    y_train_categorical = to_categorical(y_train_encoded, num_classes=num_classes)
+    y_test_categorical = to_categorical(y_test_encoded, num_classes=num_classes)
 
     X_train, X_val, y_train_categorical, y_val_categorical = train_test_split(
-        X_train, y_train_categorical, test_size=0.2, random_state=42
+        X_train,
+        y_train_categorical,
+        test_size=0.2,
+        random_state=42,
+        stratify=y_train_encoded,
     )
 
     scaler = StandardScaler()
